@@ -1,6 +1,8 @@
 # ProFTPDivas
 We will exploit a machine using the ProFTPD 1.3.3c  exploit, add defenses to that machine, and regain access with the same exploit.
 
+Link to Capstone project on YouTube: <iframe width="560" height="315" src="https://www.youtube.com/embed/B0fTzUi4_bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Hey everyone, We are Team ProFTPDivas and our team members are, Andrea Martin, Samantha Aplicador, and Brooke Womack. We are going to show you how we were able to exploit the same machine, twice. First, we will use the known ProFTPD 1.3.3c exploit, to gain backdoor access on our victim’s machine. Next, we will add firewall defenses to protect the vulnerable machine. Finally, we will circumvent these defenses with an ssh tunnel and a cron job, so we can run the exploit again without being detected.
 
 To begin, we first ran an nmap scan to determine open ports, ports 21, 22, and 80 were open. Next, we ran a nessus scan on the machine and discovered it contained a High Vulnerability with ProFTPD Compromised Source Packages. And below we can see its exploitable with Metasploit ProFTPD Backdoor command execution. 
